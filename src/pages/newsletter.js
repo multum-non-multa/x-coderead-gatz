@@ -7,7 +7,18 @@ const NewsLetter = () => {
         <div className="page-center">
           <h2>Get the latest posts ...</h2>
           <h4>... and updates to current posts.</h4>
-          <form className="contact-form">
+          <form
+            className="contact-form"
+            className="contact-form"
+            name="contact"
+            method="post"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+            action="/success"
+          >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+
             <input
               type="text"
               name="name"
