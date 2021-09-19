@@ -31,7 +31,6 @@ const Recent = () => {
   const {
     allMdx: { nodes: posts },
   } = data
-  console.log(posts)
 
   return (
     <Wrapper>

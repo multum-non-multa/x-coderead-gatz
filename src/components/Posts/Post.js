@@ -10,7 +10,6 @@ const Post = props => {
     frontmatter: { title, image, slug, date, category, readTime },
     excerpt,
   } = props
-  console.table({ excerpt })
   return (
     <Wrapper>
       <GatsbyImage image={getImage(image)} alt={title} className="img" />

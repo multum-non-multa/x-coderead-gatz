@@ -13,7 +13,6 @@ const PostTemplate = ({ data }) => {
       body,
     },
   } = data
-  console.log(body)
 
   return (
     <Layout>
