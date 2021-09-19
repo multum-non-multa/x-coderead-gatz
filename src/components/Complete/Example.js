@@ -1,7 +1,7 @@
 import React from 'react'
 import Highlight, { defaultProps } from 'prism-react-renderer'
 
-import theme from 'prism-react-renderer/themes/vsLight'
+import theme from 'prism-react-renderer/themes/github'
 
 //
 
@@ -31,6 +31,7 @@ const Example = props => {
       {...defaultProps}
       code={props.children.props.children.trim()}
       language={language}
+      theme={theme}
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre className={className} style={style}>
