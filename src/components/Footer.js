@@ -5,7 +5,10 @@ const Footer = () => {
     <footer className="footer">
       <div>
         <SocialLinks styleClass="footer-icons" />
-        <p>&copy; {new Date().getFullYear()} MDXBlog. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} by multum non multa&trade;. All
+          rights reserved.
+        </p>
       </div>
     </footer>
   )

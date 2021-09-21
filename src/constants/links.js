@@ -15,15 +15,15 @@ const Links = ({ styleClass, children }) => {
         {children}
       </li>
       <li>
-        <Link to="/newsletter" className="page-link">
-          Newsletter
+        <Link to="/resources" className="page-link">
+          Resources
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link to="/post" className="page-link">
           Post
         </Link>
-      </li>
+      </li> */}
     </ul>
   )
 }

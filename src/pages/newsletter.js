@@ -9,7 +9,6 @@ const NewsLetter = () => {
           <h4>... and updates to current posts.</h4>
           <form
             className="contact-form"
-            className="contact-form"
             name="contact"
             method="post"
             netlify-honeypot="bot-field"
