@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "x-coderead-gatz",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
-  "license": "0BSD",
+  "description": "An extension of smilga for coderead",
+  "version": "0.0.2",
+  "license": "None",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

@@ -6,6 +6,19 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Banner from '../components/Banner'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+
+/**
+ * ! embeddImages --- see below --- used when want to use gatsby-fied images in mdx posts --- via an array arrangement
+ * --- mdx post ---
+ * title: ...
+ * ...
+ * embeddedImages:
+ * - main.jpg
+ * - second.png
+ * - third.jpg
+ *
+ */
+
 const PostTemplate = ({ data }) => {
   const {
     mdx: {
