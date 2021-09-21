@@ -8,4 +8,35 @@ category: type conversion
 readTime: 2
 ---
 
-## Post No. 008
+import { Link } from 'gatsby'
+import { Headings, Code, Video, RegVideo } from '../../components/Complete'
+
+<Headings.myH2>Post No. 008</Headings.myH2>
+
+<blockquote display="info">
+
+<h3>Note</h3>
+
+When you see a code snippet below, dump it in a repl and play around with it.
+It will help you build an understanding of, and memory for, Python.
+
+</blockquote>
+
+<Video
+  src="https://www.loom.com/embed/3054c971777345a0a0181e3fd1ce6a51"
+  title="Diner Calculator Project"
+/>
+
+.
+
+<Headings.myH4>Data Types Revisited </Headings.myH4>
+
+Let's go a bit further with some of the things mentioned in an earlier post - _see_ [Variable Types in Python](http://localhost:4000/code/2021/08/31/variables-string-methods-functions.html).
+
+As mentioned, we may or may not be able to use a Python built-in function with the data. For example, you can't use
+
+- the `len()` function on a number, but only a sequence like a `string`
+
+- the `[ ]` subscripting operators on a number, but, once again, only a sequence like a `string`
+
+Sometimes, however you are able to convert from one type to another.
