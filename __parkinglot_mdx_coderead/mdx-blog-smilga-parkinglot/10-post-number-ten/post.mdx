@@ -1,0 +1,68 @@
+---
+title: Post 10 Milestone
+slug: post-10-milestone
+image: ./images/gatsby-1.png
+date: 2021-09-10
+author: mei mei
+category: python
+readTime: 12
+---
+
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../../components/Complete'
+
+## post mdx file
+
+Lorem **ipsum** dolor sit, amet consectetur adipisicing elit. Magni molestiae ullam sapiente atque animi, voluptates inventore incidunt ipsam consequatur deleniti similique accusantium exercitationem pariatur nobis nostrum nulla debitis ab dicta.
+
+Magni molestiae ullam sapiente atque animi, voluptates inventore incidunt ipsam consequatur deleniti similique accusantium exercitationem pariatur nobis **_nostrum_** nulla `debitis ab dicta`.
+
+```python
+
+print("This is python")
+
+```
+
+<div className="nice-text">
+  <h3 style={{ color: 'purple' }}> Note </h3>
+  <FiInfo className="nice-text-icon"> </FiInfo>
+  Magni molestiae ullam sapiente atque animi, voluptates inventore incidunt
+  ipsam
+</div>
+
+<h2>React components</h2>
+
+<Counter />
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+![nice image](./images/gatsby-1.png)
+
+<LikeButton />
+
+<Link to="/posts" className="btn center-btn">
+  Back to all posts
+</Link>

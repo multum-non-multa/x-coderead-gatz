@@ -9,7 +9,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 const PostTemplate = ({ data }) => {
   const {
     mdx: {
-      frontmatter: { title, category, image, date, embeddedImages },
+      frontmatter: { title, category, image, date /*embeddedImages*/ },
       body,
     },
   } = data
@@ -31,7 +31,7 @@ const PostTemplate = ({ data }) => {
             <p>{date}</p>
             <div className="underline"></div>
           </div>
-          <MDXRenderer embeddedImages={embeddedImages}>{body}</MDXRenderer>
+          <MDXRenderer /*embeddedImages={embeddedImages}*/>{body}</MDXRenderer>
         </article>
         {/* banner */}
         <article>
@@ -51,11 +51,11 @@ export const query = graphql`
         slug
         title
         readTime
-        embeddedImages {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
+        # embeddedImages {
+        #   childImageSharp {
+        #     gatsbyImageData
+        #   }
+        # }
         image {
           childImageSharp {
             gatsbyImageData
