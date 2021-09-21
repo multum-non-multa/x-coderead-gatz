@@ -18,7 +18,7 @@ const Navbar = ({ toggle }) => {
           </button>
         </div>
         <Links styleClass="nav-links" />
-        <SocialLinks styleClass="nav-icons" />
+        {/* <SocialLinks styleClass="nav-icons" /> */}
       </div>
     </nav>
   )

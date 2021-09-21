@@ -17,7 +17,7 @@ const About = () => {
         className="img"
       />
       <p>You should know why you are here.</p>
-      <SocialLinks styleClass="banner-icons" />
+      {/* <SocialLinks styleClass="banner-icons" /> */}
     </Wrapper>
   )
 }
